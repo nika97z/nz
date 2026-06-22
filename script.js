@@ -13,7 +13,7 @@
     }
 
     function updateLevels() {
-        var elapsed = Math.floor((Date.now() - startTime) / 60000);
+        var elapsed = Math.floor((Date.now() - startTime) / 3600000);
         var visible = elapsed + 1;
         for (var i = 1; i <= 70; i++) {
             var el = document.querySelector('.level' + i);
