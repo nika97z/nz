@@ -32,9 +32,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.main_hour #resetBtn {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100px;
+  height: 30px;
 }
 .main_hour .hour {
-  width: 100px;
-  height: 500px;
+  width: 300px;
+  height: 600px;
   background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1px;
+}
+.main_hour .hour .level {
+  width: 100%;
+  height: calc((100% - 69px) / 70);
+  flex-shrink: 0;
+  background-color: #945151;
+  display: none;
 }/*# sourceMappingURL=index.css.map */
