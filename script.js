@@ -13,7 +13,7 @@
     }
 
     function updateLevels() {
-        var elapsed = Math.floor((Date.now() - startTime) / 1000);
+        var elapsed = Math.floor((Date.now() - startTime) / 3600000);
         var visible = elapsed + 1;
         for (var i = 1; i <= 70; i++) {
             var el = document.querySelector('.level' + i);
@@ -23,7 +23,7 @@
 
     init();
     updateLevels();
-    setInterval(updateLevels, 1000);
+    setInterval(updateLevels, 10000);
 
     document.getElementById('resetBtn').addEventListener('click', function () {
         localStorage.removeItem(KEY);
