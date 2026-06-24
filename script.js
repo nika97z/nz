@@ -51,7 +51,6 @@
     init();
     updateLevels();
     setInterval(updateLevels, 10000);
-
     var resetBtn = document.getElementById('resetBtn');
     if (resetBtn) resetBtn.addEventListener('click', function () {
         localStorage.removeItem(KEY);
