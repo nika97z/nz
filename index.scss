@@ -28,6 +28,32 @@
         .fasting{
             width: 100px;
             height: 100px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            font-size: 24px;
+            background-color: #f0f0f0;
+            text-decoration: none;
+            color: black;
+            border: 2px solid #ff0000;
+        }
+        .day{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            font-size: 24px;
+            background-color: #f0f0f0;
+            text-decoration: none;
+            color: black;
+            border: 2px solid #ff0000;
+        }
+        .x{
+            width: 100px;
+            height: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -98,6 +124,39 @@
         gap: 1px;
         border: 2px solid #ff0000;
         .day{
+            width: 100%;
+            height: 100%;
+            background-color: #15ac33;
+            visibility: hidden;
+        }
+
+    }
+}
+
+.main_x{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    background-color: black;
+    #xdayresetBtn{
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 100px;
+        height: 30px;
+    }
+    .x_day_main{
+        width: 300px;
+        height: 600px;
+        background-color: #f0f0f0;
+        display: grid;
+        grid-template-rows: repeat(20, 1fr);
+        gap: 1px;
+        border: 2px solid #ff0000;
+        .x_day{
             width: 100%;
             height: 100%;
             background-color: #15ac33;
