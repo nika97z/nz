@@ -6,16 +6,28 @@
 }
 
 .main {
+  background-color: black;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
   width: 100%;
+  height: 100vh;
 }
-.main a {
+.main .main1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  height: 50%;
+  width: 30%;
+  gap: 100px;
+  background-color: black;
+}
+.main .main1 a {
   text-decoration: none;
+  color: black;
 }
-.main .fasting {
+.main .main1 .fasting {
   width: 100px;
   height: 100px;
   display: flex;
@@ -24,6 +36,9 @@
   border: 2px solid black;
   font-size: 24px;
   background-color: #f0f0f0;
+  text-decoration: none;
+  color: black;
+  border: 2px solid #ff0000;
 }
 
 .main_hour {
@@ -34,6 +49,7 @@
   align-items: center;
   gap: 20px;
   flex-direction: column;
+  background-color: black;
 }
 .main_hour #resetBtn {
   border-radius: 5px;
@@ -48,8 +64,41 @@
   display: grid;
   grid-template-rows: repeat(70, 1fr);
   gap: 1px;
+  border: 2px solid #ff0000;
 }
 .main_hour .hour .level {
+  width: 100%;
+  height: 100%;
+  background-color: #15ac33;
+  visibility: hidden;
+}
+
+.main_30_day {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  background-color: black;
+}
+.main_30_day #tdayresetBtn {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100px;
+  height: 30px;
+}
+.main_30_day .day_main {
+  width: 300px;
+  height: 600px;
+  background-color: #f0f0f0;
+  display: grid;
+  grid-template-rows: repeat(30, 1fr);
+  gap: 1px;
+  border: 2px solid #ff0000;
+}
+.main_30_day .day_main .day {
   width: 100%;
   height: 100%;
   background-color: #15ac33;
